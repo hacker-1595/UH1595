@@ -1,0 +1,972 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="website icon" type="png" href="https://github.com/hacker-1595/UH1595/blob/main/moodle.png?raw=true">
+    <style> 
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .home-container {
+            background-image: url("https://res.cloudinary.com/dymntfrwl/image/upload/v1742103403/WhatsApp_Image_2025-03-15_at_8.14.55_PM_h6yl36.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            margin-top: 30px;
+        }
+        .nav-container {
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            /* padding: 10px; */
+            height: 38px;
+            z-index: 100;
+        }
+        .nav-heading {
+            font-size: 20px;
+            color: rgb(119, 117, 117);
+            font-weight: 500;
+            font-family: 'Roboto';
+            padding-top: 3px;
+        }
+        #options {
+            background-color: transparent;
+            color: rgb(119, 117, 117);
+            border: none;
+            margin-left: 30px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav-paragraph {
+            font-size: 13px;
+            margin-right: 15px;
+            color: rgb(119, 117, 117);
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 8px;
+        }
+        .home-image {
+            height: auto;
+            width: 355px;
+            margin: 20px;
+        }
+        .dashbord,.course-container {
+            background-color: rgb(189, 247, 189);
+            color: rgb(11, 22, 54);
+            margin: 20px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dashbord2 {
+            background-color: rgb(189, 247, 189);
+            color: rgb(11, 22, 54);
+            margin: 20px;
+            margin-top: 30px;
+            padding:5px;
+            margin-right: 30px;
+        }
+        .course-container {
+            width: 99%;
+            padding:20px;
+        }
+        .border-container {
+            background-color: white;
+            margin-top: 2.5%;
+            padding: 10px;
+            height: auto;
+        }
+        .sasi-heading{
+            color: rgb(27, 13, 48);
+            font-size: 20px;
+            font-weight:650;
+        }
+        .sasi-paragraph{
+            font-size: 12px;
+            color: rgb(61, 30, 90);
+            font-weight:500;
+        }
+        .course-overview{
+            color: rgb(166, 163, 163);
+            font-size: 12px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .course-overview2{
+            color: rgb(61, 30, 90);
+            font-size: 12px;
+            margin-left:10px;
+            padding: 0px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btech-heading{
+            font-size: 20px;
+            font-weight: 600;
+            margin-left: 30px;
+            color:rgb(82, 34, 112) ;
+            padding-bottom: 10px;
+        }
+        .list-item1{
+            color: rgb(94, 49, 131);
+            list-style: square;
+            font-size: 13px;
+        }
+        .list-item2{
+            color: rgb(94, 49, 131);
+            list-style: inherit;
+            font-size: 13px;
+        }
+        .list-item3{
+            color: rgb(94, 49, 131);
+            list-style: square;
+            font-size: 13px;
+        }
+        .list-item4{
+            color: rgb(94, 49, 131);
+            list-style: square;
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        .image-item{
+            height: 32px;
+            width: 32px;
+            margin: 1px;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section class="nav-container">
+        <div class="d-flex">
+            <span class="nav-heading ml-3" style="font-family: Arial, Helvetica, sans-serif;">SITE</span>
+            <span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgb(119, 117, 117); padding-left: 35px; padding-top: 7px;"><b>English (en)▾</b></span>
+            <!-- <select id="options" name="options">
+                <option value="option1">English (en)</option>
+            </select> -->
+            <div class="d-flex ml-auto">
+                <p class="nav-paragraph" style="font-family: Arial, Helvetica, sans-serif;"><b>23K65A6105 S N K L NARAYANA MUNGANDA</b></p>
+                <div>
+                    <img src="https://p.urbanpro.com/tv-prod/member/photo/3545893-large.jpg" alt="" class="image-item">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-container">
+        <div class="home-content">
+            <img src="https://res.cloudinary.com/dymntfrwl/image/upload/v1742105745/WhatsApp_Image_2025-03-15_at_8.14.51_PM_i6d2tv.jpg" alt="Home Image" class="home-image"><br>
+            <span class="dashbord">Dashboard</span>
+        </div>
+        <br>
+        <div class="container-fluid m-0 p-0">
+            <div class="row no-gutters">
+                <!-- ITEM LIST -->
+                <div class="col-12 col-md-3">
+                    <div class="dashbord2">
+                        <p><strong class="course-overview">NAVIGATION</strong></p>
+                        <p class="course-overview2">Dashboard</p>
+                        <ul>
+                            <li class="list-item1">Site home</li>
+                            <li class="list-item2">Site pages</li>
+                            <li class="list-item3">My courses</li>
+                            <li class="list-item4"> III B.Tech II Sem AIML (22 Batch)</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Main Content Container -->
+                <!-- <div class="col-12 col-md-9">
+                    <div class="border-container p-3 mr-3">
+                        <div class="course-container m-2">
+                            <p><strong class="course-overview">COURSE OVERVIEW</strong></p>
+                            <h2 class="btech-heading">III B.Tech II Sem AIML (22 Batch)</h2>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-12 col-md-9">
+                    <div class="border-container p-3 mr-3">
+                        <div class="course-container m-2">
+                            <p><strong class="course-overview">COURSE OVERVIEW</strong></p>
+                            <!-- <h2 class="btech-heading">III B.Tech II Sem AIML (22 Batch)</h2> -->
+                             <pre style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+1.	What is the vanishing gradient problem in deep learning?
+a.	A phenomenon where gradients become too large during training	c.	 A situation where gradients approach zero, leading to slow or stalled learning
+b.	A problem caused by a small learning rate	d.	A challenge in parallelizing deep learning algorithms
+ANS:	C	PTS:	1
+
+    2.	 RNNs stands for?
+a.	Report neural networks	c.	 Receives neural networks
+b.	Recurrent neural networks	d.	Recording neural networks
+
+
+ANS:	b	PTS:	1
+
+    3.	What is the primary purpose of a Convolutional Neural Network (CNN)?
+a.	Object detection	c.	Text generation
+b.	Image classification	d.	 Reinforcement learning
+
+ANS:	B	PTS:	1
+
+    4.	Which layer type is typically used to extract local features in a CNN?
+a.	Convolutional layer	c.	 Activation layer
+
+b.	Pooling layer	d.	Fully connected layer
+
+ANS:	A	PTS:	1
+
+    5.	What is the advantage of using convolutional layers in a CNN?
+a.	They can capture local spatial patterns in the input data	c.	They can generate synthetic data
+b.	They can handle sequential data	d.	They can handle variable-length inputs
+
+ANS:	A	PTS:	1
+
+    6.	What is the purpose of the pooling layer in a CNN?
+a.	To reduce the spatial dimensions of the feature maps	c.	To adjust the weights and biases of the network
+b.	To introduce non-linearity to the net-work
+    d.	To compute the gradients for backpropagation
+
+ANS:	A	PTS:	1
+
+    7.	Which activation function is commonly used in the convolutional layers of a CNN?
+
+a.	ReLU (Rectified Linear Unit)
+    c.	Tanh (Hyperbolic Tangent)
+b.	Sigmoid	d.	Softmax
+
+ANS:	A	PTS:	1
+
+    8.	What is the purpose of the stride parameter in a convolutional layer?
+a.	To determine the size of the receptive field	c.	To adjust the learning rate during training
+b.	To control the step size of the convolution operation	d.	None of the above
+
+
+ANS:	B	PTS:	1
+
+    9.	What is the purpose of the padding parameter in a convolutional layer?
+a.	To adjust the learning rate during train-ing
+     c.	To regularize the network and prevent overfitting
+
+b.	To prevent the reduction of spatial dimensions	d.	None of the above
+
+
+
+ANS:	B	PTS:	1
+
+    10.	Which layer type is responsible for making final predictions in a CNN?
+a. Convolutional layer
+     c.	Fully connected layer 
+b. Pooling layer	d.	Activation layer 
+
+ANS:	C	PTS:	1
+
+    11.	What is the purpose of the fully connected layers in a CNN?
+a.	To capture global patterns and make predictions
+    d.	To initialize the weights and biases of the network
+b.	To reduce the spatial dimensions of the input data	e.	All
+c.	To apply non-linear transformations to the feature maps
+
+
+ANS:	A	PTS:	1
+
+    12.	Which layer type is responsible for applying non-linear transformations to the feature maps in a CNN?
+a.	Convolutional layer
+    c.	Fully connected layer
+b.	Pooling layer	d.	Activation layer
+
+
+ANS:	D	PTS:	1
+
+    13.	Which is the best way to go for Game playing problem?
+a.	Linear approach	c.	Random approach
+b.	Heuristic approach	d.	An Optimal approach
+
+
+ANS:	B	PTS:	1
+
+    14.	What is the purpose of dropout regularization in a CNN?
+a.	To randomly disable neurons during training to prevent overfitting	c.	To increase the number of layers in the network
+b.	To adjust the learning rate during training	d.	None of the above
+
+
+ANS:	A	PTS:	1
+
+    15.	Which layer type is responsible for backpropagating the gradients and updating the network's parameters in a CNN?
+
+a.	Convolutional layer
+    c.	Fully connected layer
+b.	Pooling layer
+    d.	Activation layer
+
+ANS:	C	PTS:	1
+
+    16.	What is the primary advantage of using a CNN over a fully connected neural network for image processing tasks?
+a.	CNNs can capture local spatial patterns in the input data	c.	CNNs have a higher number of neurons
+b.	CNNs can handle sequential data	d.	CNNs have a higher training speed
+
+ANS:	A	PTS:	1
+
+    17.	_________ is one of the formalisms that help AI programs to do search process more conveniently in state-space problems.
+a.	Problem solving	c.	State Space Search
+b.	Production system	d.	Control strategies
+
+
+ANS:	B	PTS:	1
+
+    18.	Which layer type is responsible for parameter sharing in a CNN?
+a.	Convolutional layer 	c.	Fully connected layer
+b.	Pooling layer	d.	Activation layer
+
+
+
+ANS:	A	PTS:	1
+
+    19.	What is the minimum value of the ReLu function
+a.	0	c.	1
+b.	0.5	d.	Infinite
+
+
+ANS:	A	PTS:	1
+
+    20.	AND function’s hypothesis designed as neural network equivalemt. Then weight of its bias is------
+a.	0.5
+b.	1
+c.	-2.0
+d.	-1,5
+
+
+ANS:	D	PTS:	1
+
+    21.	OR function’s hypothesis designed as neural network equivalemt. Then weight of its bias is------
+a.	-0.5
+b.	1
+c.	-2.0
+d.	-1,5
+
+
+ANS:	A	PTS:	1
+
+    22.	What is the purpose of the receptive field in a convolutional layer?
+a.	To determine the number of filters in the layer	c.	To specify the size of the local region for the convolution operation
+b.	To determine the size of the feature maps
+    d.	None of the above
+
+ANS:	C	PTS:	1
+
+    23.	Which layer type is responsible for spatial downsampling in a CNN?
+a.	Convolutional layer 	c.	Fully connected layer
+b.	Pooling layer	d.	Activation layer
+
+ANS:	B	PTS:	1
+
+    24.	What is the purpose of the filter/kernel in a convolutional layer?
+a.	To determine the number of neurons in the layer
+
+b.	To specify the size of the feature maps
+c.	To extract local features from the input data
+d.	None of the mentioned
+
+
+ANS:	C	PTS:	1
+
+    25.	A 4-input neuron has weights 1, 2, 3 and 4. The transfer
+function is linear with the constant of proportionality being
+equal to 2. The inputs are 4, 10, 5 and 20 respectively. The
+output will be
+ Why do we need biological neural networks?
+a.	To make smart human interactive & user-friendly system
+    c.	To solve tasks like machine vision & natural language processing
+
+b.	To apply heuristic search methods to find solutions of problem
+    d.	All of the above
+
+
+
+
+ANS:	D	PTS:	1
+
+    26.	The first neural network computer:______________
+a.	AM
+
+b.	AN
+c.	RFD
+d.	SNARK
+
+
+ANS:	D	PTS:	1
+
+    27.	
+ _____ is/are the ways to represent uncertainty
+
+a.	Fuzzy logic
+    c.	Probability
+b.	Entropy
+    d.	All of the above
+
+
+ANS:	D	PTS:	1
+
+    28.	
+ What is Adaline in neural networks?
+a.	Adaptive line element
+    c.	Adaptive linear element
+
+b.	Automatic linear element
+ty	d.	All of the mentioned
+
+
+ANS:	C	PTS:	1
+
+    29.	
+What is the primary goal of deep learning?
+a.	Data compression	b.	Feature extraction	c.	Learning patterns from data	d.	 Linear regression
+
+
+ANS:	C	PTS:	1
+
+    30.	
+What kind of neural network is most frequently applied to the image classification?
+a.	RNN (Recurrent Neural Network)	c.	FNN
+b.	CNN	d.	 LSTM (Long Short-Term Memory)
+
+
+ANS:	B	PTS:	1
+
+    31.	
+ What is the main benefit of deep neural networks over shallow neural networks?
+a.	Faster convergence	b.	Lower memory usage	c.	Guaranteed global minimum
+    d.	Simplicity of implementation
+
+
+ANS:	B	PTS:	1
+
+    32.	
+What kind of layer is commonly used in neural networks to add non-linearity?
+a.	Fully Connected Layer
+
+
+    c.	Convolutional Layer
+b.	Pooling Layer	d.	Activation Layer
+
+
+ANS:	D	PTS:	1
+
+    33.	
+What does “epoch” mean in deep learning?
+a.	The number of layers in a neural network	c.	One complete pass through the entire training dataset
+b.	The learning rate of the optimizer	d.	The type of activation function used
+
+
+ANS:	C	PTS:	1
+
+    34.	
+In deep learning, what is the role of a loss function?
+ a.	To measure the model’s prediction accuracy	b.	To initialize model parameters	c.	To calculate the gradients for optimization	d.	To normalize input data
+
+
+ANS:	C	PTS:	1
+
+    35.	
+Which deep learning system is known for its dynamic computation graph and was created by Facebook AI Research?
+
+a.	TensorFlow	b.	PyTorch	c.	Keras
+    d.	Theano
+
+
+
+ANS:	B	PTS:	1
+
+    36.	
+What is the main benefit of batch gradient descent in deep learning over stochastic gradient descent?
+
+a.	It converges faster to the optimal solution.	b.	It reduces memory usage during training.
+    c.	It provides a more accurate estimate of the gradient.	d.	It requires less computation.
+
+
+ANS:	C	PTS:	1
+
+    37.	
+Which term best defines the process of improving a deep learning model that has already been trained for a particular task using a smaller dataset?
+a.	Model initialization	c.	Transfer learning
+b.	Data augmentation	d.	Gradient descent
+
+
+ANS:	C	PTS:	1
+
+    38.	
+What are the key advantages of dropout in neural networks?
+a.	It increases model complexity	c.	It introduces stochasticity to improve generalization.
+b.	It accelerates training.	d.	It reduces the number of neurons in the network.
+
+
+ANS:	C	PTS:	1
+
+    39.	
+ Which layer type is commonly used in CNNs to normalize the input data?
+a.	Convolutional layer	c.	Batch normalization layer
+
+b.	Pooling layer
+    d.	Activation layer
+
+
+ANS:	C	PTS:	1
+
+    40.	
+What is the primary goal of training a CNN?
+a.	To minimize the prediction error on the training data	c.	To achieve 100% accuracy on the test data
+
+b.	To maximize the number of layers in the network	d.	None of the above
+
+ANS:	A	PTS:	1
+
+    41.	
+Which deep learning architecture is well-suited for processing sequential data like natural lan-guage?
+a.	CNN
+    b.	RNN
+    c.	LSTM
+    d.	GAN
+ANS:	B	PTS:	1
+
+    42.	
+What deep learning framework has a reputation for being flexible and simple to use for cre-ating neural networks?
+a.	TensorFlow	b.	PyTorch
+    c.	Keras	d.	Caffe
+
+
+ANS:	B	PTS:	1
+
+    43.	
+Which optimization technique is frequently employed to train deep neural networks and dy-namically modifies learning rates?
+a.	Stochastic Gradient Descent (SGd)	c.	Random Search
+
+b.	Adam	d.	Mean Squared Error (MSE)
+
+
+ANS:	B	PTS:	1
+
+    44.	
+What does the term “backpropagation” in deep learning refer to ___
+a.	The process of updating model parameters during training	c.	The forward pass in a neural network
+b.	The use of gradient descent for optimization
+    d.	The selection of activation functions
+
+
+ANS:	A	PTS:	1
+
+    45.	
+Which activation function, which has non-linearity and smooth gradient features, is frequently utilized in hidden layers of deep neural networks?
+ 
+a.	Sigmoid
+    c.	Tanh (Hyperbolic Tangent)
+b.	ReLU (Rectified Linear Unit)	d.	Linear
+
+
+ANS:	B	PTS:	1
+
+    46.	
+What is “overfitting” in deep learning?
+a.	The inability of the model to fit the training data	c.	The model’s tendency to fit noise in the training data
+b.	The model learning relevant features from the data	d.	The model’s high training accuracy
+
+
+ANS:	C	PTS:	1
+
+    47.	
+What does dropout regularization in deep neural networks do?
+a.	To add noise to the data	c.	To reduce overfitting
+b.	To increase the model’s complexity	d.	To accelerate training
+
+
+ANS:	C	PTS:	1
+
+    48.	
+Which of the following is a typical activation function for introducing non-linearity in deep learning?
+a.	Mean Squared Error (MSE)	c.	Principal Component Analysis
+b.	Rectified Linear Unit (ReLU)	d.	k-Nearest Neighbors (k-NN)
+
+
+ANS:	B	PTS:	1
+
+    49.	
+Why does dropout regularization exist in neural networks?
+a.	To increase the number of hidden layers	c.	To prevent overfitting
+b.	To reduce the number of neurons in each layer	d.	To improve convergence speed
+
+
+ANS:	C	PTS:	1
+
+    50.	
+What kind of neural network is usually used for tasks involving the processing of sequential data and natural language?
+a.	Convolutional Neural Network 	c.	Multilayer Perceptron 
+b.	Recurrent Neural Network 	d.	Self-Organizing Map 
+
+
+ANS:	B	PTS:	1
+
+    51.	
+Techniques used in game playing problem are ________
+a.	Heuristic techniques	c.	Turing techniques
+b.	Kevins techniques	d.	None of the above
+
+
+ANS:	A	PTS:	1
+
+    52.	
+What is the main role of the softmax activation function in a neural network’s output layer?
+a.	To introduce non-linearity	b.	To normalize the output into probability distribution	c.	To prevent vanishing gradients	d.	To reduce the dimensionality of the data
+
+
+ANS:	B	PTS:	1
+
+    53.	
+Which layer type is responsible for introducing translation invariance in a CNN?
+a.	Convolutional layer
+    c.	Fully connected layer
+b.	Pooling layer	d.	Activation layer
+
+
+ANS:	A	PTS:	1
+
+    54.	
+What is the purpose of the output layer in a CNN?
+a.	 To compute the predicted output based on the final feature representation
+    c.	To apply non-linear transformations to the feature maps
+b.	To reduce the spatial dimensions of the input data	d.	To initialize the weights and biases of the network
+
+ANS:	A	PTS:	1
+
+    55.	
+In each epoch of training a Deep Learning model, which of the following training parameters is constant?
+a.	Learning rate.
+b.	Batch size.
+c.	Number of hidden layers.
+d.	Loss function
+
+
+ANS:	A	PTS:	1
+
+    56.	
+Does the use of max pooling in convolutional neural networks (CNNs) necessarily result in a decrease in the number of parameters?
+a.	Yes.	b.	No.	c.	Can’t say	d.	No comments
+
+
+ANS:	B	PTS:	1
+
+    57.	
+When forecasting probabilities for n classes so that the total probability across n classes equals 1, what activation function is typically employed in the output layer?
+a.	ReLU.	b.	Sigmoid.	c.	Tanh.
+    d.	Softmax.
+
+
+ANS:	D	PTS:	1
+
+    58.	
+What is the purpose of zero-padding in a CNN?
+
+a.	To adjust the learning rate during training	b.	To prevent the reduction of spatial dimensions	c.	To regularize the network and prevent overfitting	d.	None of the above
+
+ANS:	B	PTS:	1
+59. How accurate are deep learning algorithms compared to machine learning techniques for classifying images?
+a.	Slightly more accurate.	c.	Equally accurate
+b.	Significantly more accurate	d.	OccaOcasionally more accurate.
+
+
+ANS:	B	PTS:	1
+
+60.	 What is the primary purpose of model inference in deep learning?
+
+a.	To train the model
+    b.	To fine-tune hyperparameters	c.	To make predictions on new data	d.	To validate the model
+
+
+ANS:	A	PTS:	1
+
+    61.	
+Which layer type is commonly used in CNNs for semantic segmentation tasks?
+ 
+a.	Convolutional layer
+    c.	Fully connected layer
+b.	Pooling layer
+    d.	 Upsampling layer
+
+ANS:	D	PTS:	1
+
+    62.	
+ What is the main benefit of deep neural networks over shallow neural networks?
+a.	Faster convergence	b.	Lower memory usage	c.	Guaranteed global minimum
+    d.	Simplicity of implementation
+
+
+ANS:	B	PTS:	1
+
+    63.	
+What kind of layer is commonly used in neural networks to add non-linearity?
+a.	Fully Connected Layer
+
+
+    c.	Convolutional Layer
+b.	Pooling Layer	d.	Activation Layer
+
+
+ANS:	D	PTS:	1
+
+    64.	
+What is the purpose of the loss function in CNN training?
+
+a.	To measure the prediction error and guide the learning process	c.	To adjust the learning rate
+during training
+
+b.	To initialize the weights and biases of the network
+    d.	None of the above
+
+
+ANS:	A	PTS:	1
+
+    65.	
+In deep learning, what is the role of a loss function?
+ a.	To measure the model’s prediction accuracy	b.	To initialize model parameters	c.	To calculate the gradients for optimization	d.	To normalize input data
+
+
+ANS:	C	PTS:	1
+
+    66.	
+Which layer type is commonly used in CNNs to introduce non-linearity?
+
+a.	Convolutional layer
+    b.	Pooling layer
+    c.	Fully connected layer
+    d.	Activation layer 
+
+
+ANS:	D	PTS:	1
+
+    67.	
+What is the main benefit of batch gradient descent in deep learning over stochastic gradient descent?
+
+a.	It converges faster to the optimal solution.	b.	It reduces memory usage during training.
+    c.	It provides a more accurate estimate of the gradient.	d.	It requires less computation.
+
+
+ANS:	C	PTS:	1
+
+    68.	
+Which term best defines the process of improving a deep learning model that has already been trained for a particular task using a smaller dataset?
+a.	Model initialization	c.	Transfer learning
+b.	Data augmentation	d.	Gradient descent
+
+
+ANS:	C	PTS:	1
+
+    69.	
+What is the purpose of data augmentation in CNN training?
+ 
+a.	To increase the number of layers in the network	c.	To adjust the learning rate during train-ing
+
+b.	To introduce noise and variations in the training data	d.	None of the above
+
+
+ANS:	B	PTS:	1
+
+    70.	
+ Which layer type is commonly used in CNNs to handle variable-sized inputs?
+
+a.	Convolutional layer
+    c.	Fully connected layer
+
+b.	Pooling layer	d.	None of the above
+
+
+
+ANS:	D	PTS:	1
+
+    71.	
+What is the primary advantage of using transfer learning in deep learning?
+
+a.	Faster training times	c.	Utilizing pre-trained models to improve performance on new tasks with limited data
+b.	Avoiding the need for labeled data	d.	Simplifying the architecture of deep neural networks
+ANS:	C	PTS:	1
+72. 	The complexity of ANN is dependent upon ___________
+a.	Number ofnodes	c.	Number of neurons
+b.	Number of Layers	d.	All of the above
+
+
+ANS:	C	PTS:	1
+
+73. 	Which loss function is commonly used for multi-class classification problems in deep learning?
+
+a.	Mean Squared Error (MSE)	c.	Cross-Entropy Loss
+b.	Mean Absolute Error (MAE)
+    d.	Huber Loss
+
+ANS:	C	PTS:	1
+
+74. 	What is a generative model in deep learning?
+
+a.	A model that generates random data for testing	c.	A model that generates new data samples that resemble the training data
+b.	A model that uses unsupervised learning to learn patterns in the data	d.	A model that generates random weights for initializing neural networks
+ANS:	C	PTS:	1
+
+    75. What is the primary limitation of using deep learning in cases with limited labelled data?
+
+a.	The inability to use transfer learning	c.	The risk of overfitting
+b.	The need for larger networks
+    d.	The requirement for more computational power
+ANS:	C	PTS:	1
+
+    76. Which optimization algorithm is commonly used to train deep learning models?) 
+a.	Gradient Descent	c.	Genetic Algorithm
+b.	K-Means
+    d.	Adam
+ANS:	D	PTS:	1
+
+77. 	Components of learning agent
+a.	Performance element	d.	Problem generator
+b.	Critic element	e.	All
+c.	Learning element
+
+
+ANS:	E	PTS:	1
+
+    78. Non linear planning is 
+a.	space of plans	c.	space of actions
+b.	space os states	d.	None
+
+
+ANS:	A	PTS:	1
+
+    79. Which deep learning model is used for generating realistic images from random noise?
+a.	Autoencoder
+    c.	GAN (Generative Adversarial Network)
+b.	Variational Autoencoder (VAE)
+    d.	Boltzmann Machine
+
+
+ANS:	C	PTS:	1
+
+    80. What is the primary challenge in training deeper neural networks?
+
+a.	Difficulty in defining the loss function	c.	Lack of computational resources
+
+b.	Vanishing gradient problem
+    d.	The requirement for more labeled data
+ANS:	B	PTS:	1
+
+81. 	
+Which type of deep learning model is often used for unsupervised learning tasks like clustering and dimensionality reduction?
+
+a.	Convolutional Neural Network (CNN)	c.	Restricted Boltzmann Machine (RBM)
+b.	Long Short-Term Memory (LSTM)
+    d.	Residual Neural Network (ResNet)
+
+
+ANS:	C	PTS:	1
+
+82.. Which deep learning technique is commonly used to handle sequential data and address the vanishing gradient problem?
+
+a.	Batch Normalization	c.	Skip Connections
+b.	Weight Initialization	d.	Gradient Clipping
+
+
+ANS:	C	PTS:	1
+
+83.
+Which deep learning model architecture can be used for anomaly detection and data reconstruction?
+
+a.	GAN
+    c.	Autoencoder
+b.	LSTM
+    d.	VAE
+ANS:	C	PTS:	1
+
+84.	
+What does the term “preprocessing” refer to in the context of deep learning?
+
+a.	Adjusting the learning rate during training	c.	Preparing and transforming the raw data before feeding it into the model
+
+b.	Pre-training the neural network using unsupervised learning	d.	Fine-tuning a pre-trained model on a new task
+
+
+ANS:	C	PTS:	1
+
+    85.	
+Which deep learning model architecture is used for reinforcement learning tasks, such as playing games?
+a.	CNN
+    c.	 LSTM
+
+b.	RNN
+    d.	Deep Q-Network (DQN)
+
+
+ANS:	D	PTS:	1
+
+    86.	
+What is the purpose of the pooling layer in a CNN?
+a.	It reduces the spatial dimensions of the feature maps.
+b.	It adds more convolutional layers to the network
+c.	It introduces non-linearity to the network.
+d.	It performs feature extraction on the input data.
+
+ANS:	A	PTS:	1
+
+
+
+87.	
+What kind of neural network is usually used for tasks involving the processing of sequential data and natural language?
+a.	Convolutional Neural Network 	c.	Multilayer Perceptron 
+b.	Recurrent Neural Network 	d.	Self-Organizing Map 
+
+
+ANS:	B	PTS:	1
+
+    88.	
+Which deep learning model architecture is best suited for time series forecasting?
+a.	RNN	c.	GAN
+b.	CNN	d.	VAE
+
+
+ANS:	A	PTS:	1
+
+    89.	
+What is the main role of the softmax activation function in a neural network’s output layer?
+a.	To introduce non-linearity	b.	To normalize the output into probability distribution	c.	To prevent vanishing gradients	d.	To reduce the dimensionality of the data
+
+
+ANS:	B	PTS:	1
+
+    90.	
+In deep learning, what is the purpose of the “dropout rate”?
+a) b) c) 
+d) 
+a.	To control the number of epochs during training
+    c.	To determine the proportion of neurons to deactivate during training
+b.	To adjust the learning rate during training
+
+    d.	To set the number of layers in the network
+
+
+ANS:	C	PTS:	1                                
+                               </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid rgb(159, 235, 159);">
+        <div class="text-center">
+            <h4 class="sasi-heading">SASI - Values We Live</h4>
+            <p class="sasi-paragraph">You are logged in as 23K65A6105 S N K L NARAYANA MUNGANDA (Log Out) </p>
+            <p class="sasi-paragraph">Home</p>
+        </div>
+        </div>
+    </section>
+</body> 
+</html>
